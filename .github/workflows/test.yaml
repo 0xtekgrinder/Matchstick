@@ -1,0 +1,61 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  unit-test:
+    container: epitechcontent/epitest-docker
+
+    name: unit-test
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        continue-on-error: true
+        uses: actions/checkout@v2
+
+      - name: run unit_tests
+        continue-on-error: true
+        run: make tests_run &>> tests_output.txt
+
+      - name: run coverage
+        continue-on-error: true
+        run: make coverage &>> tests_output.txt
+
+      - name: run branches
+        continue-on-error: true
+        run: make branches &>> tests_output.txt
+
+      - name: upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage_outputs
+          path: ./tests_output.txt
+
+  functionnal-test:
+    container: epitechcontent/epitest-docker
+
+    name: functionnal-test
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        continue-on-error: true
+        uses: actions/checkout@v2
+
+      - name: make binary
+        continue-on-error: true
+        run: make &>> tests_output.txt
+
+      - name: run functional tests
+        continue-on-error: true
+        run: ./tests/functionnal-test.sh &>> tests_output.txt
+
+      - name: upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: function-tests_outpouts
+          path: ./tests_output.txt
