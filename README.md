@@ -42,7 +42,7 @@ Compile it with `make` and launch the programm with:
     You lost, too bad...
 
 # Tests
-You can execute functionnal tests with `./tests/functionnal-test.sh` and you can run unit tests with `make tests_run`. Use `make coverage` to see the number of lines covered by the unit tests and `make branches` to see the number of branches covered by the unit tests
+You can execute functional tests with `./tests/functional-test.sh` and you can run unit tests with `make tests_run`. Use `make coverage` to see the number of lines covered by the unit tests and `make branches` to see the number of branches covered by the unit tests
 
 # Bonus
 
