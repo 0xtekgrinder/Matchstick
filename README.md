@@ -53,7 +53,7 @@ There are two types of bonuses:
 
 With regard to AI bonuses, you can battle an AI against another AI with four different levels of AI. On top of that, the AI can play as the first player and the user as the second player.
 
-Regarding the Network bonus, you can play against another player coming from another program instance of the program with a binary named server.
+Regarding the Network bonus, you can play against another player coming from another program instance with a binary named server.
 
 ## Usage
 Compile it with `make bonus`. Run the server with `./server` and then run the binary with:
