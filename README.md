@@ -1,6 +1,6 @@
 # Matchstick
 
-An Epitech Project to recreate the nim game with an amount of lines changeable as well as a maximum amount of sticks you can take each turn.
+An Epitech Project to recreate the nim game with a number of lines changeable as well as a maximum number of sticks you can take each turn.
 
 # Usage:
 Compile it with `make` and launch the programm with:
@@ -42,35 +42,35 @@ Compile it with `make` and launch the programm with:
     You lost, too bad...
 
 # Tests
-You can execute the fonctionnall tests with `./tests/functionnal-test.sh` and you can run the unit tests with `make tests_run`. Use `make coverage` to see the amount of lines covered by the unit tests and `make branches` to see the amount of branches covered by the unit tests
+You can execute fonctionnal tests with `./tests/fonctionnal-test.sh` and you can run unit tests with `make tests_run`. Use `make coverage` to see the number of lines covered by the unit tests and `make branches` to see the number of branches covered by the unit tests
 
 # Bonus
 
 ## The bonuses
-There is two kind of bonuses:
+There are two type of bonuses:
 - AI
 - Network
 
-On the AI bonuses, you can battle an ai against another ai with four differents levels of AI. On top of that, the ai can play as the first playeyer and the user as the second player.
+With regard to AI bonuses, you can battle an AI against another ai with four different levels of AI. On top of that, the AI can play as the first player and the user as the second player.
 
-On the Network bonuses, you can play against another player from another instance of the program with a server binary.
+Regarding the Network bonus, you can play against another player coming from another instance of the program with a server binary.
 
-## The Usage
+## Usage
 Compile it with `make bonus`. Run the server with `./server` and then run the binary with:
 ```bash
- ./matchstick_bonus nb_lines max_sticks -g GAMEMODE [-i1 FIRST_IA] [-i2 SECOND_IA] [-p PLAYER]
+ ./matchstick_bonus nb_lines max_sticks -g GAMEMODE [-i1 FIRST_AI] [-i2 SECOND_AI] [-p PLAYER]
 
 OPTIONS
  -g     1: player vs player
-        2: player vs IA
-        3: IA vs player
-        4: IA vs IA
+        2: player vs AI
+        3: AI vs player
+        4: AI vs AI
 
--i1/i2  1: strong IA
-        2: medium IA
-        3: low IA
-        4: very low IA
+-i1/i2  1: strong AI
+        2: medium AI
+        3: low AI
+        4: very low AI
 ```
 
-# Autor:
+# Author:
 - **Matéo VIEL**
