@@ -52,7 +52,7 @@ jobs:
 
       - name: run functional tests
         continue-on-error: true
-        run: ./tests/functionnal-test.sh &>> tests_output.txt
+        run: ./tests/functional-test.sh &>> tests_output.txt
 
       - name: upload
         uses: actions/upload-artifact@v2

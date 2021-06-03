@@ -201,8 +201,7 @@ Test(matchstick, all_good_error_handling)
 
 Test(matchstick, get_input_failure)
 {
-    int filedes = 3;
-    FILE *stream = fdopen(filedes, "w");
+    FILE *stream = fopen("./tests/expected_outputs/temp", "w");
     char buff[512];
 
     fprintf(stream, "%d", EOF);
