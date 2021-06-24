@@ -1,6 +1,6 @@
 # Matchstick
 
-An Epitech Project to recreate the nim game with a number of lines changeable as well as a maximum number of sticks you can take each turn.
+An Epitech Project in C to recreate the nim game with a number of lines changeable as well as a maximum number of sticks you can take each turn.
 
 # Usage:
 Compile it with `make` and launch the programm with:
@@ -74,3 +74,5 @@ OPTIONS
 
 # Author:
 - **Matéo VIEL**
+# Disclaimer:
+Beware of -42 Epitech students !!!
